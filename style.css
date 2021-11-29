@@ -3,12 +3,18 @@
   margin: 0%;
   padding: 0%;
 }
-head{
-  color: red;
-}
-#logo{
-  margin-left: 350px;
 
+.src{
+  border-radius: 50px;
+  padding: 13px 150px;
+  font-size: 70%;
+
+  
+}
+.search{
+  height: 35px;
+  margin-bottom: 20px;
+ 
 }
   
 li{
@@ -20,7 +26,7 @@ li{
 
 li a {
     display: block;
-    padding: 14px 16px;
+    padding:10px 16px;
     text-decoration: none;
     text-align: center;
     color: #fff;
@@ -31,22 +37,35 @@ li a {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: red;
+    background-color: #333;
     top: 0;
     width: 100%;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   body{
-      background-color: wheat;
+      background-color: lightgrey;
   }
-  .box{
-     border: 1px solid black;
-     background-color: white;
-     width: 300px;
-     height: 250px;
-     display: inline-block;
-     text-align: center;
-  }
+
+  .nav:hover {
+    background-color: white;
+    color: #333;
+    border-radius: 20px;
+    border: 1px solid;
+    transform: scale(1.04);
+    transition: 0.1s;
+}
+
+
+.cart:hover {
+    border: 2px solid #fff;
+     transform: scale(1.04);
+     transition: 0.1s;
+     border-radius: 20px;
+}
+
+
   #one{
     margin-left: 450px;
-
   }
+
