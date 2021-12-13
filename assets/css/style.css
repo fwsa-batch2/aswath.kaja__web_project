@@ -6,15 +6,15 @@
 
 .src{
   border-radius: 50px;
-  padding: 13px 150px;
-  font-size: 70%;
-
-  
+  padding: 13px 50px 13px 30px  ;
+  width: 100%;
+  font-size: 70%; 
+  border-style: none;
 }
+
 .search{
-  height: 35px;
-  margin-bottom: 20px;
- 
+  color: #333;
+  background-color: #333;
 }
   
 li{
@@ -26,7 +26,7 @@ li{
 
 li a {
     display: block;
-    padding:10px 16px;
+    padding: 10px 11px 0px 11px;
     text-decoration: none;
     text-align: center;
     color: #fff;
@@ -40,14 +40,16 @@ li a {
     background-color: #333;
     top: 0;
     width: 100%;
-    font-size: x-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:large;
+    font-family:sans-serif;
+    font-weight: bolder;
   }
   body{
       background-color: lightgrey;
   }
 
   .nav:hover {
+    padding: 6px 10px ;
     background-color: white;
     color: #333;
     border-radius: 20px;
@@ -55,6 +57,16 @@ li a {
     transform: scale(1.04);
     transition: 0.1s;
 }
+
+.cart{
+  margin-left: 50%;
+}
+
+.login{
+  margin-left: 50%;
+}
+
+
 
 
 .cart:hover {

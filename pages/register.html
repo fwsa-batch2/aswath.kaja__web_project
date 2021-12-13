@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0px 0px 20px 1px #ccc;
+            background-color: white;
+            margin-top: 7%;
+
+        }
+
+        input[type=text],
+        [type=password],
+        [type=email],
+        select {
+            width: 100%;
+            padding: 10px 10px;
+            margin: 8px 0px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 20px;
+            box-shadow: 0px 0px 5px 1px #ccc;
+
+        }
+
+        .formhead {
+            text-align: center;
+            background-color: whitesmoke;
+            padding: 20px 0px;
+            margin-bottom: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        button {
+            background-color: #191970;
+            font-family: sans-serif;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            width: 500px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formhead">
+            <h1>User Register
+            </h1>
+        </div>
+        <form onsubmit=loginfun()>
+            <div class="form">
+                <label for="">Username</label>
+                <input type="text" id="username" pattern="[A-Z  a-z ]{5,15}" placeholder="username" required>
+                <label for="">Email Id</label>
+                <input type="email" id="email" placeholder="Enter a valid email id" required>
+                <label for="">Password</label>
+                <input type="password" id="password" placeholder="password" pattern="[0-9 A-Z a-z]{8,15}" title="" required>
+                <label for="">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Confirm password" pattern="[0-9 A-Z a-z]{8,15}" title="Haiden loosu poo" required>
+                <button>
+                    Submit
+                </button>
+
+            </div>
+        </form>
+
+    </div>
+    <script src="../assets/javascript/register.js"></script>
+
+</body>
+
+</html>
