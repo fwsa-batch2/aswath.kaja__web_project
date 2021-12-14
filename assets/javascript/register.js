@@ -2,13 +2,10 @@ let userList = [];
 
 function onPageload() {
     let details = JSON.parse(localStorage.getItem("users"));
-    if (details == null) {
-        userList =[];
-    }
-    else{
+    if (details != null) {
         userList = details;
-    }
-}
+}}
+
 function loginfun() {
     event.preventDefault();
 
@@ -41,10 +38,10 @@ function loginfun() {
     }
 
 function emailvalid(currentemail) {
-    let userData = JSON.parse(localStorage.getItem("users"));
+    // let userData = JSON.parse(localStorage.getItem("users"));
     let used = false;
-    for (i = 0; i < userData.length; i++) {
-        const email = userData[i].email;
+    for (i = 0; i < userList.length; i++) {
+        const email = userList[i].email;
         if (currentemail == email) {
             used = true;
             break;
