@@ -9,9 +9,9 @@ function onPageload() {
 }
 console.groupEnd(onPageload)}
 
-function loginfun() {
+function register() {
     event.preventDefault();
-    console.group("loginfun")
+    console.group("register")
 
     let userName = document.getElementById("username").value.trim();
     console.log(userName)
@@ -45,8 +45,9 @@ function loginfun() {
             let userArray = JSON.stringify(userList)
             console.log(userArray)
             localStorage.setItem("users", userArray);
+            window.location.href = "./../../pages/login.html";
         }
-    console.groupEnd("loginfun")
+    console.groupEnd("register")
     }
 
 function emailvalid(currentemail) {
@@ -64,3 +65,4 @@ function emailvalid(currentemail) {
 }
 
 onPageload();
+
