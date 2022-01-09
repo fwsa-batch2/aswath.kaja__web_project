@@ -15,7 +15,7 @@
             <h1>User Register
             </h1>
         </div>
-        <form onsubmit=register() id="myForm">
+        <form onsubmit="register(event)" id="myForm">
             <div class="form">
                 <label for="username">Username</label>
                 <input type="text" id="username" pattern="[A-Z  a-z ]{5,15}" title="Username should contain atleast 6 characters" placeholder="Username" required autofocus>
