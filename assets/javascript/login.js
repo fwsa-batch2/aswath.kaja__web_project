@@ -12,7 +12,6 @@ function login(){
     event.preventDefault();
    let regEmail = document.getElementById("email").value;
    let regPassword = document.getElementById("password").value;
-
    let emailCheck = emailExists(regEmail,regPassword); // emailExists is function that that checks user email and password ;
    console.log(emailCheck);
    if(emailCheck){
@@ -24,8 +23,6 @@ function login(){
        logArrays.push(loggedIns);     
        localStorage.setItem("loggedInusers",JSON.stringify(logArrays));
        window.location.href = "./../index.html";
-
-
    }
    else{
        alert("user doesn't exists");

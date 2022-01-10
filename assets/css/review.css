@@ -206,7 +206,11 @@ h2{
     list-style:none;
     border-radius: 10px;
     font-family: "Poppins", sans-serif;
-    }
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
     #list1 li{
         background-color:aliceblue;
         margin-top: 10px;

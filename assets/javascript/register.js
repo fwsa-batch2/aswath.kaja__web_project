@@ -32,6 +32,7 @@ function register(event){
         else if(password===""&&password2===""){
             alert("password cannot be empty")
         }
+        
         else{
             userList.push(customerdetails);
             let userArray = JSON.stringify(userList)

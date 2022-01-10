@@ -17,7 +17,8 @@ function onSumbit() {
   //  console.log(inputData1);
   let inputData2 = document.getElementById("userInput").value;
   //  console.log(inputData2);
-  let exDatas = JSON.parse(localStorage.getItem("reviews"));
+  let exDatas = JSON.parse(localStorage.getItem("user"));
+  console.log(exDatas);
   let match = false;
   for(let i=0; i<exDatas.length; i++){    
   if(exDatas[i].userName==inputData1){
@@ -25,7 +26,7 @@ function onSumbit() {
     break;
   }
   }
-if(!match){ 
+if(match){ 
   let reviewSource = {
   userName: inputData1,
   userData: inputData2,
@@ -33,7 +34,7 @@ if(!match){
 updateDatas(reviewSource)
 renderDatas();
 }
-else if(match){
+else if(!match){
   alert("Your review has been already submitted")
 }
 }
