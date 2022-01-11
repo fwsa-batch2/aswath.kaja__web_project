@@ -38,7 +38,7 @@ let allUsers = JSON.parse(localStorage.getItem("users"));
         let pass = oneUser.password;
         if (mail == paraEmail && pass == paraPassword){
             match = true;
-            break;  
+            break; 
         }    
     }
  return match;

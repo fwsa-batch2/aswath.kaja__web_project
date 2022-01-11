@@ -7,6 +7,7 @@ function onPageload() {
 }
 }
 
+const email = document.getElementById("Email").value.trim();
 
 function loginfun(event) {
     event.preventDefault();
@@ -28,12 +29,12 @@ function loginfun(event) {
     }
     userList.push(customerdetails);
     let userArray = JSON.stringify(userList)
-    let mus =localStorage.setItem("user", userArray);
-    let details = JSON.parse(localStorage.getItem("user"));
- 
+    let mus =localStorage.setItem("user", userArray); 
     toastr.success("Successfully Saved your details");
+    sendEmail()
     event.target.reset();
   
 }
+ 
 onPageload();
 
