@@ -27,15 +27,30 @@ function onSumbit() {
     }
   }
   if (match) {
+    let exReviews = JSON.parse(localStorage.getItem("reviews"));
+      let equal = false;
+      for(let i of exReviews){
+        if(i.userName==inputData1){
+          equal = true;
+          break
+        }
+      }
+      if(equal){
+        alert("hhhh")
+      }
+      else if(!equal){
     let reviewSource = {
       userName: inputData1,
       userData: inputData2,
     };
     updateDatas(reviewSource);
-    renderDatas();
+    renderDatas();}
   } else if (!match) {
     alert("User does not exist please login");
+    window.location.href = "./../../pages/register.html";
   }
+
+
 }
 function renderDatas() {
   let answer = "";
