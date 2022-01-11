@@ -23,7 +23,7 @@ function loginfun(event) {
         "name": userName,
         "address": address,
         "phonenumber": phonenumber,
-        "Email":email,
+        "email":email,
         "problemIn": problemIn,
         "problemNote": problemNote,
     }
