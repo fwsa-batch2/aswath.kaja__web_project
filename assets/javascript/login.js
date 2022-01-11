@@ -2,13 +2,13 @@ let logArrays =[];
 function onPageload() {
   let userData = JSON.parse(localStorage.getItem("logggedInusers"));   
     if(userData!=null){
-        logArrays == userData;
+        logArrays = userData;
     }
     return logArrays
  
 }
 onPageload ();
-function login(){
+function login(event){
     event.preventDefault();
    let regEmail = document.getElementById("email").value;
    let regPassword = document.getElementById("password").value;
@@ -32,10 +32,9 @@ function login(){
 function emailExists(paraEmail,paraPassword) {
     let match = false;
 let allUsers = JSON.parse(localStorage.getItem("users"));
-    for (let i=0; i<allUsers.length; i++){
-        let oneUser = allUsers[i];
-        let mail = oneUser.email;
-        let pass = oneUser.password;
+    for (let i of allUsers){
+        let mail = i.email;
+        let pass = i.password;
         if (mail == paraEmail && pass == paraPassword){
             match = true;
             break; 

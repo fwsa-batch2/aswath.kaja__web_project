@@ -11,17 +11,15 @@ function updateDatas(reviewSource) {
   let reviewDataInString = JSON.stringify(reviewData);
   localStorage.setItem("reviews", reviewDataInString);
 }
-function onSumbit() {
+function onSumbit(event) {
   event.preventDefault();
   let inputData1 = document.getElementById("userName").value;
-  //  console.log(inputData1);
   let inputData2 = document.getElementById("userInput").value;
-  //  console.log(inputData2);
   let exDatas = JSON.parse(localStorage.getItem("users"));
   console.log(exDatas);
   let match = false;
-  for (let i = 0; i < exDatas.length; i++) {
-    if (exDatas[i].username == inputData1) {
+  for (let i of exDatas){
+    if (i.username == inputData1) {
       match = true;
       break;
     }
@@ -54,11 +52,10 @@ function onSumbit() {
 }
 function renderDatas() {
   let answer = "";
-  for (let i = 0; i < reviewData.length; i++) {
-    let len = reviewData[i];
-    let nameA = len.userName;
+  for (let i of reviewData) {
+    let nameA = i.userName;
     console.log(nameA);
-    let review = len.userData;
+    let review = i.userData;
     console.log(review);
     let temp =
       "<li>" +
