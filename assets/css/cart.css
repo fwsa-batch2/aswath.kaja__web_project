@@ -1,0 +1,146 @@
+.top_nav_bar {
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    position: relative;
+}
+
+.logo_div {
+    color: #fff;
+    font-size: 1vw;
+    width: 20%;
+    height: 100%;
+    padding: 0.6% 1%;
+}
+
+.logo_div span {
+    display: inline-block;
+}
+
+.logo_icon {
+    text-align: center;
+    background-color: rgb(248, 191, 3);
+    font-size: 1.5vw;
+    color: white;
+    padding: 5% 3.5%;
+    border-radius: 5px;
+    margin-right: 6%;
+}
+
+.logo_icon i {
+    color: white;
+}
+
+.site_name {
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+.nav_items ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 5%;
+}
+
+.nav_items {
+    position: absolute;
+    top: 0%;
+    left: 18%;
+    padding-top: 0.6%;
+    width: 40%;
+}
+
+.nav_items a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input[type="search"] {
+    padding: 1.5%;
+    border-radius: 3px;
+    width: 420px;
+    border: none;
+}
+
+.nav_search {
+    position: absolute;
+    top: 35%;
+    left: 89%;
+    display: inline-flex;
+}
+
+.search_icon {
+    position: absolute;
+    margin-left: 90%;
+    top: 18%;
+}
+
+.nav_icons {
+    position: absolute;
+    padding-bottom: 4%;
+
+}
+
+.fa-shopping-cart {
+    padding: 6px 10px;
+    background-color: #333;
+    margin-left: 450px;
+    font-size: 2vw;
+    position: absolute;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.fa-shopping-cart:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.fa-sign-in-alt {
+    padding: 6px 10px;
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    margin-left: 510px;
+    margin-top: -10%;
+}
+
+.fa-sign-in-alt:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.nav_items a:hover {
+    padding: 6px 10px;
+    background-color: white;
+    color: #333;
+    border-radius: 20px;
+    border: 1px solid;
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+
+.heading {
+    margin-left: 70px;
+}
+
+table {
+    width: 100%;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    font-weight: bolder;
+    border-radius: 30%;
+    width: 30px;
+    height: 30px;
+}
+
+label {
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;}
