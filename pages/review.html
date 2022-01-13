@@ -37,22 +37,25 @@
     </div>
     <h1>Give your Reviews</h1>
 
-    <form onsubmit="onSumbit()">
+    <form onsubmit="onSumbit(event)">
         <ul id="list1">
             <li>
                 <img src="../assets/images/profile.png" alt="profile image" class="profile_image"><img src="../assets/images/reveiwstar.png" alt="img" class="star_img">
                 <p class="username">Aswath</p>
                 <p class="review">It's an awesome shop that I have ever seen and used ,It have many facilites I like it very much</p>
+                <p class="date">13 Jan 2022</p>
             </li>
             <li>
                 <img src="../assets/images/profile.png" alt="profile image" class="profile_image"><img src="../assets/images/reveiwstar.png" alt="img" class="star_img">
                 <p class="username">chitra Muthukumaran</p>
                 <p class="review">It's an awesome shop that I have ever seen and used ,It have many facilites I like it very much</p>
+                <p class="date">13 Jan 2022</p>
             </li>
             <li>
                 <img src="../assets/images/profile.png" alt="profile image" class="profile_image"><img src="../assets/images/reveiwstar.png" alt="img" class="star_img">
                 <p class="username">Mohammed Hasan Musaraf</p>
                 <p class="review">It's an awesome shop that I have ever seen and used ,It have many facilites I like it very much</p>
+                <p class="date">13 Jan 2022</p>
             </li>
         </ul>
         <ul id="list">
@@ -61,7 +64,10 @@
             
             <div class="">
                 <h2> Add your comments</h2>
-            <input type="text" id="userName" placeholder="Enter your registered username" required><br><br>
+        <div class="container">
+       <div type="text" id="userName" placeholder="Enter your registered username"></div><br><br>
+       <div id="dateDiv"> </div>
+       </div>
         <input type="text" id="userInput" placeholder="Enter your task" required><br>
 
         <button type="submit">POST</button>

@@ -7,11 +7,8 @@ function onPageload() {
 }
 }
 
-const email = document.getElementById("Email").value.trim();
-
 function loginfun(event) {
     event.preventDefault();
-
     const userName = document.getElementById("name").value.trim();
     const address = document.getElementById("address").value.trim();
     const phonenumber = document.getElementById("phoneNumber").value.trim();
@@ -30,11 +27,13 @@ function loginfun(event) {
     userList.push(customerdetails);
     let userArray = JSON.stringify(userList)
      localStorage.setItem("user", userArray); 
-    toastr.success("Successfully Saved your details");
-    sendEmail()
-    event.target.reset();
-  
+     resultDetails();
+    //  event.target.reset();
+    //  window.location.href = "./../index.html";
 }
- 
+function resultDetails(){
+    document.querySelector(".box").style.display="none"
+    document.querySelector(".customer_ticket").style.display="block"
+}
 onPageload();
 

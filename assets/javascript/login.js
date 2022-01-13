@@ -5,27 +5,32 @@ function onPageload() {
         logArrays = userData;
     }
     return logArrays
- 
 }
 onPageload ();
 function login(event){
     event.preventDefault();
+  let exDatas = JSON.parse(localStorage.getItem("users"))
    let regEmail = document.getElementById("email").value;
    let regPassword = document.getElementById("password").value;
+   let loggedIns ={}
+ for(let i of exDatas){
+     if(i.email===regEmail){
+         loggedIns = i;
+         break
+     }
+ }
    let emailCheck = emailExists(regEmail,regPassword); // emailExists is function that that checks user email and password ;
    console.log(emailCheck);
+
    if(emailCheck){
        alert("you have succesfully logged in")
-       let loggedIns = {
-           "logEmail": regEmail,
-           "logPass" : regPassword,
-       } ;
        logArrays.push(loggedIns);     
        localStorage.setItem("loggedInusers",JSON.stringify(logArrays));
        window.location.href = "./../index.html";
    }
    else{
        alert("user doesn't exists");
+       
    }
 }
 

@@ -6,30 +6,25 @@
     <link rel="stylesheet" href="../assets/css/service.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&amp;family=Roboto&amp;display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </head>
 
 <body>
     <div class="box">
-        <form onsubmit=loginfun(event) method="post">
+        <form onsubmit=loginfun(event)>
             <h1>Customer Service Details </h1>
             <label for="">Name</label>
-            <input type="text" placeholder="Enter your full name" id="name" required>
+            <input type="text" placeholder="Enter your full name" id="name" >
             <label for="">Address</label>
-            <input type="text" placeholder="Enter an valid Address" id="address" required>
+            <input type="text" placeholder="Enter an valid Address" id="address">
             <label for="">Email id</label>
-            <input type="email" placeholder="Enter an valid Email Address" id="email" required>
+            <input type="email" placeholder="Enter an valid Email Address"  id="email" >
             <label for="">Phone Number</label>
-            <input type="tel" placeholder="Enter your Phonenumber" id="phoneNumber" required>
+            <input type="number" placeholder="Enter your Phonenumber">
             <label> Problem in</label>
-            <input type="text" id="problemIn" placeholder="For example in monitor or in CPU" required>
+            <input type="text" id="problemIn" placeholder="For example in monitor or in CPU">
             <label for="">ShortNote about Problems</label><br>
-            <textarea rows="1" id="problemNote"
-                style="padding: 60px;width: 380px; margin: 8px 0px; border-radius: 10px;"
-                placeholder="Give an short message about your problem" required></textarea>
+            <input area="text" rows="5" id="problemNote" placeholder="Give an short message about your problem">
             <br><br>
             <button>
                 Submit
@@ -38,6 +33,7 @@
     </div>
     <div class="customer_ticket">
 
+   <h2> heloo</h2>
     </div>
     <script src="../assets/javascript/main.js"></script>
 

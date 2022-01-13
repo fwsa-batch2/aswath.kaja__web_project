@@ -16,7 +16,7 @@ h1{
 
 }
 
-input[type=text],[type=tel],[type=email],
+input,
 select {
     width: 100%;
     padding: 10px 10px;
@@ -42,4 +42,10 @@ button {
     border-radius: 8px;
     margin-left: 400px;
     font-family: "Poppins", sans-serif;
+}
+#problemnote{
+    height: 40%;
+}
+.customer_ticket{
+    display: none;
 }

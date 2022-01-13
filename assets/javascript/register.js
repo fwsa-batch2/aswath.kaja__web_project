@@ -16,14 +16,18 @@ function register(event){
     let password2 = document.getElementById("password2").value.trim(); 
 
         const customerdetails = {
-            "username": userName,
+            "userName": userName,
             "email": email,
             "password": password,
             "password2": password2,
         } 
         console.table(customerdetails)
+        const userNameExists = userNamevalid(userName);
         const emailexists = emailvalid(email);
-        if(emailexists){
+        if(userNameExists){
+            alert("user already exists")
+        }
+        else if(emailexists){
             alert("email already exists")
         }
         else if(password != password2){
@@ -40,7 +44,19 @@ function register(event){
             window.location.href = "./../../pages/login.html";
         }
     }
-
+    function userNamevalid(currentname) {
+        let taken = false;
+        for (let i of userList) {
+            const nameA = i.userName;
+            console.log(currentname);
+            console.log(nameA);
+            if (currentname === nameA) {
+                taken = true;
+                break;
+            }
+        }
+        return taken;
+    }
 function emailvalid(currentemail) {
     let used = false;
     for (let i of userList) {
