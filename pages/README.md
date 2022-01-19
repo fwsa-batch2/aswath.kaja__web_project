@@ -24,12 +24,13 @@ Features:-
 ### REVIEW
 1.Only registered user can post review
 2.Registered users can post review only one time
-3.If unregistered user post review page will redirect to register page
+3.If unregistered user post review page will redirect to login page
 
 ### CUSTOMER SERVICES
-1.Name should range between 5 to 15 letters
+1.logged in users can only log in.
 2.Email should in the form of @  .com
 3.All the customer details noted and saved in localStorage
+
 
 
 

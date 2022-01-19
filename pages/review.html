@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/review.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <script src="../assets/javascript/pageload.js"></script>
 </head>
 <body>
     <div class="top_nav_bar">
@@ -37,7 +38,6 @@
     </div>
     <h1>Give your Reviews</h1>
 
-    <form onsubmit="onSumbit(event)">
         <ul id="list1">
             <li>
                 <img src="../assets/images/profile.png" alt="profile image" class="profile_image"><img src="../assets/images/reveiwstar.png" alt="img" class="star_img">
@@ -58,20 +58,19 @@
                 <p class="date">13 Jan 2022</p>
             </li>
         </ul>
-        <ul id="list">
+        <ul id="list">    
             
         </ul>
-            
-            <div class="">
+            <div class=" ">
                 <h2> Add your comments</h2>
+                <form onsubmit="onSumbit(event)">
         <div class="container">
        <div type="text" id="userName" placeholder="Enter your registered username"></div><br><br>
        <div id="dateDiv"> </div>
-       </div>
-        <input type="text" id="userInput" placeholder="Enter your task" required><br>
-
+       </div>        <input type="text" id="userInput" placeholder="Give your comments" required><br>
         <button type="submit">POST</button>
     </div>
+</form>
 
 
     <script src="../assets/javascript/review.js"></script>

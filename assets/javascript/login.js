@@ -4,7 +4,6 @@ function onPageload() {
     if(userData!=null){
         logArrays = userData;
     }
-    return logArrays
 }
 onPageload ();
 function login(event){

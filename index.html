@@ -5,7 +5,8 @@
     <title>home page rcomp</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-          
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+     
 </head>
      
 
@@ -30,7 +31,7 @@
                     <em class="fas fa-search"></em>
             </div>
             <div class="nav_icons">
-           <a href="./pages/cart.html"><em class="fas fa-shopping-cart"></em></a>
+           <a href="./pages/cart.html"><em class="fas fas fa-shopping-bag"></em></a>
            <a href="./pages/register.html"><em class="fas fa-sign-in-alt"></em></a>
         </div>
 
@@ -39,40 +40,70 @@
 
     </div>
     <img src="./assets/images/banner-1.jpg" width="100%" height="20%" alt="img"><br><br>
-    <div class="product_displays">
-        <h1 class="heading">Top Products For You</h1>
-        <div class="display_products">
-            <img src="./assets/images/dell1.png" class="product_image" alt="img">
-            <p  class="product_name">Dell Vostro 3400</p>
-            <p class="price">price &#x20B9;40000<del class="mrp">60000</del><p class="mrp">(25% off)</p></p>
-            <button class="cart_btn"><a href="./pages/cart.html">Add to cart</a></button> <br> <br>
-            <button class="products_btn"><a href="./pages/products.html"> View Products</a></button> 
+        <!-- featured products -->
+        <div class="small-container">
+            <h1 class="title">Featured Products</h1>
+            <div class="row">
+                <div class="col">
+                   <img src="./assets/images/dell1.png"  alt="img">
+                   <h4>Dell Vostro 3400</h4>
+                   <div class="rating">
+                       <em class="fa fa-star"></em>
+                       <em class="fa fa-star"></em>
+                       <em class="fa fa-star"></em>
+                       <em class="fa fa-star"></em>
+                       <em class="fas fas fa-star-half-alt"></em>
+                   </div>
+                   <p>&#x20B9;40000 &nbsp;<del class="mrp">60000 </del>&nbsp;(25% off)</p>
+                   <button class="btn"><a>VEIW PRODUCT</a></button>
 
-        </div>
-        <div class="display_products_2">
-            <img src="./assets/images/maclap.webp" class="product_image_2" alt="img">
-            <p  class="product_name">Apple Macbook Air</p>
-            <p class="price">     price &#x20B9;40000 <del class="mrp">60000 </del><p>(25% off)</p></p>
-            <button class="cart_btn"><a href="./pages/cart.html">Add to cart</a></button> <br> <br>
-            <button class="products_btn"><a href="./pages/products.html"> View Products</a></button> 
-</div>
-            <div class="display_products_3">
-                <img src="./assets/images/hp.png" class="product_image_3" alt="img">
-                <p  class="product_name">Dell Vostro 3400</p>
-                <p class="price">price &#x20B9;40000 <del class="mrp">60000 </del><p>(25% off)</p></p>
-                <button class="cart_btn"><a href="./pages/cart.html">Add to cart</a></button> <br> <br>
-                <button class="products_btn"><a href="./pages/products.html"> View Products</a></button> 
-            </div>
-                <div class="display_products_4">
-                    <img src="./assets/images/lenovoLap.png" class="product_image_4" alt="img">
-                    <p  class="product_name">Lenovo IdeaPad Slim</p>
-                    <p class="price">price &#x20B9;40000 <del class="mrp">60000 </del><p>(25% off)</p></p>
-                    <button class="cart_btn"><a href="./pages/cart.html">Add to cart</a></button> <br> <br>
-                    <button class="products_btn"><a href="./pages/products.html"> View Products</a></button> 
                 </div>
+                <div class="col">
+                    <img src="./assets/images/maclap.webp"  alt="img">
+                    <h4>Apple macbook air</h4>
+                    <div class="rating">
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fas fas fa-star-half-alt"></em>
+                    </div>
+                    <p>&#x20B9;40000 &nbsp;<del class="mrp"> 60000 </del>&nbsp;(25% off)</p>
+                    <button class="btn">VEIW PRODUCT</button>
 
+                 </div>
+                 <div class="col">
+                    <img src="./assets/images/hp.png"  alt="img">
+                    <h4>Dell Vostro 3400</h4>
+                    <div class="rating">
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fas fas fa-star-half-alt"></em>
+                    </div>
+                    <p>&#x20B9;40000 &nbsp;<del class="mrp">60000 </del>&nbsp;(25% off)</p>
+                    <button class="btn">VEIW PRODUCT</button>
+
+                 </div>
+                 <div class="col">
+                    <img src="./assets/images/lenovoLap.png" alt="img">
+                    <h4>Dell Vostro 3400</h4>
+                    <div class="rating">
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fas fas fa-star-half-alt"></em>
+                    </div>
+                    <p>&#x20B9;40000 &nbsp;<del class="mrp">60000 </del>&nbsp;(25% off)</p>
+                    <button class="btn">VEIW PRODUCT</button>
+                 </div>
+            </div>
+        </div>
+        
     <div class="brands_display">
-        <h1 class="heading">Top Selling Brands</h1>
+        <h1 class="title">Top Selling Brands</h1>
         <div class="brands_list">
             <div class="brand_items">
                 <img src="./assets/images/lenovoBrand.png" class="lenovo_logo" alt="img">
@@ -88,9 +119,63 @@
             </div>
         </div>
     </div>
-            
+    <!--   reviews -->
+    <div class="reviews">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <em class="fa fa-quote-left"></em>                
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Morbi tristique ac magna id viverra. Pellentesque sit amet efficitur felis.
+        Cras vel nunc cursus, vulputate velit non, fermentum lorem. Morbi aliquam augue lectus,</p>
+        <div class="rating">
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fas fas fa-star-half-alt"></em>
+        </div>
+        <img src="https://ca.slack-edge.com/T032648LE-UUHGC5E2H-365477827165-192" alt="">
+        <h3>Chitra Muthukumaran </h3>
+                </div>
+                <div class="col-2">
+                    <em class="fa fa-quote-left"></em>                
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Morbi tristique ac magna id viverra. Pellentesque sit amet efficitur felis.
+        Cras vel nunc cursus, vulputate velit non, fermentum lorem. Morbi aliquam augue lectus,</p>
+        <div class="rating">
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fas fas fa-star-half-alt"></em>
+        </div>
+        <img src="https://ca.slack-edge.com/T032648LE-UNJ715CK0-53e3dc63a07b-192" alt="">
+        <h3>Shanmuga Anandaraman </h3>
+                </div> <div class="col-2">
+                    <em class="fa fa-quote-left"></em>                
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Morbi tristique ac magna id viverra. Pellentesque sit amet efficitur felis.
+        Cras vel nunc cursus, vulputate velit non, fermentum lorem. Morbi aliquam augue lectus,</p>
+        <div class="rating">
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fa fa-star"></em>
+            <em class="fas fas fa-star-half-alt"></em>
+        </div>
+        <img src="https://ca.slack-edge.com/T032648LE-UU2P5F45Q-0be1f8a66de5-192" alt="">
+        <h3>Prasanna Bharathi Ram </h3>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <!--  -->
+<div class="footer">
+        <div class="row">
+            <p class="copyright">Copyright 2022 - Aswath</p>
+        </div>
+</div>
 
 
 

@@ -1,41 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top_nav_bar {
+      width: 100%;
+      padding: 10px 0 10px 0;
+      background-color: #333;
+      position: relative;
+
+    }
+
+    .logo_div {
+      color: #fff;
+      font-size: 1vw;
+      width: 20%;
+      height: 100%;
+      padding: 0.6% 1%;
+    }
+
+    .logo_div span {
+      display: inline-block;
+    }
+
+    .logo_icon {
+      text-align: center;
+      background-color: rgb(248, 191, 3);
+      font-size: 1.5vw;
+      color: white;
+      padding: 5% 3.5%;
+      border-radius: 5px;
+      margin-right: 6%;
+    }
+
+    .logo_icon i {
+      color: white;
+    }
+
+    .site_name {
+      color: #fff;
+      font-size: 1.5vw;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .nav_items ul li {
+      display: inline-block;
+      color: #fff;
+      margin-left: 3%;
+      margin-right: 1%;
+    }
+
+    .nav_items {
+      position: absolute;
+      top: 30%;
+      left: 18%;
+      padding-top: 0.6%;
+      width: 40%;
+
+    }
+
+    .nav_items a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    input[type="search"] {
+      padding: 1.5%;
+      border-radius: 3px;
+      width: 420px;
+      border: none;
+      display: inline-flex;
+    }
+
+    .nav_search {
+      position: absolute;
+      top: 30%;
+      left: 88%;
+      display: inline-flex;
+    }
+
+    .search_icon {
+      position: absolute;
+      margin-left: 90%;
+      top: 18%;
+    }
+
+    .nav_icons {
+      position: absolute;
+      padding-bottom: 4%;
+
+    }
+
+    .fa-shopping-bag {
+      padding: 6px 10px;
+      background-color: #333;
+      margin-left: 450px;
+      font-size: 2vw;
+      position: absolute;
+      color: #fff;
+    }
+
+    .fa-shopping-bag:hover {
+      background-color: #fff;
+      color: #333;
+      border-radius: 20px;
+      transition: 0.1s;
+    }
+    .fa-sign-in-alt {
+      padding: 6px 10px;
+      position: absolute;
+      color: white;
+      font-size: 2vw;
+      margin-left: 510px;
+      margin-top: -10%;
+    }
+    .fa-sign-in-alt:hover {
+      background-color: #fff;
+      color: #333;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+ .nav_items a:hover {
+      padding: 6px 10px;
+      background-color: white;
+      color: #333;
+      border-radius: 20px;
+      border: 1px solid;
+      transform: scale(1.04);
+      transition: 0.5s;
+    }
+    #about {
+      padding: 100px 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about-left {
+      flex-basis: 50%;
+    }
+    .about-left img {
+      width: 90%;
+    }
+    .about-right {
+      flex-basis: 50%;
+      text-align: left;
+    }
+    .about-text {
+      max-width: 500px;
+      margin-right: 100px;
+      display: inline-block;
+    }
+    hr {
+      background-color: #ff523b;
+      margin-top: 10px;
+      padding: 1px;
+    }
+  </style>
 </head>
+
 <body>
-   <h1>About US</h1>
-  <hr>
-Since 2010.... We have been Selling The Best IT Products...<br>
-We Have an online Presence Since 1998 .. The Onset Of Online Revolution <br>
+  <div class="top_nav_bar">
+    <div class="logo_div">
+      <span class="logo_icon">
+        <em class="fas fa-desktop"></em>
+      </span><span class="site_name">Rudra Computers</span>
+    </div>
+    <div class="nav_items">
+      <ul>
+        <li><a href="./index.html"> Home </a></li>
+        <li><a href="./pages/products.html">Products</a></li>
+        <li> <a href="./pages/service.html">Services</a></li>
+        <li> <a href="./pages/review.html">Review</a></li>
+        <li> <a href="./pages/about.html">About us</a></li>
+      </ul>
+      <div class="nav_search">
+        <input type="search" name="" id="" placeholder="search your products here">
+        <div class="search_icon">
+          <em class="fas fa-search"></em>
+        </div>
+        <div class="nav_icons">
+          <a href="./pages/cart.html"><em class="fas fas fa-shopping-bag"></em></a>
+          <a href="./pages/register.html"><em class="fas fa-sign-in-alt"></em></a>
+        </div>
 
-We Will Keep Updating ourselves and our Shelves With the best and Latest Of Technologies So you always get the Best.. <br>
-Our Satisfied Customer Lists Runs into Tens Of Thousands Of Customers.... And will keep increasing ... <br>
-<br><br>
+      </div>
+    </div>
 
-Awaiting To Board You .... 
-<br>
-<br>
-- Team RUDRA COMPUTERS
-<br>
-<br>
-Computer Hardware And Software Relating To Home PC's, Laptops, Displays, Networking, Cloud Computing, Machine Learning, Ai, Graphic Workstations, DATA Mining, Data Servers
-<br>
-, NAS, Firewalls & Security Devices, CCTV, BioMetric, Our List Goes on and on .......
-<br>
-<br>
+  </div>
 
+  <!--  -->
+  <section id="about">
+    <div class="about-left">
+      <img src="../assets/images/about.png" alt="img">
+    </div>
+    <div class="about-right">
+      <div class="about-text">
+        <h1 class="title">About us</h1>
+        <hr><br>
+        <p> Since 2010.... We have been Selling The Best IT Products...We Have an online Presence Since 1998 .. The
+          Onset Of Online Revolution
+          We Will Keep Updating ourselves and our Shelves With the best and Latest Of Technologies So you always get the
+          Best..
+          Our Satisfied Customer Lists Runs into Tens Of Thousands Of Customers.... And will keep increasing ... <br>
+<br>
+        <h2> Awaiting To Board You ....</h2>
+        <h3> Team RUDRA COMPUTERS </h3>
+        <br>
+        Computer Hardware And Software Relating To Home PC's, Laptops, Displays, Networking, Cloud Computing, Machine
+        Learning, Ai, Graphic Workstations, DATA Mining, Data Servers
+        , NAS, Firewalls & Security Devices, CCTV, BioMetric, Our List Goes on and on .......
+         <br> <br>
+         <h3>ASWATH,</h3>
+          <h4>RUDRA COMPUTERS,
+        </h4>
+          No:47, 21, New Avadi Rd, <br>
+          Kilpauk Garden Colony, <br>           
+          Chennai 600010  <br>
+          Phone: 90030 61031 <br>
+           rcomp@gmail.com, <br>
+    
+        </p>
+      </div>
+    </div>
 
-
-ASWATH,<br>
-RUDRA COMPUTERS, <br>
-15 Boulevard de Normandie <br> 
-Fontaine, Rhône-Alpes 38600 <br>
-France <br>
-Phone: 102-399-2444 <br>
-rcomp@gmail.com,
+  </section>
 </body>
+
 </html>

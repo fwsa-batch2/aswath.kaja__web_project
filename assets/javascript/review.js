@@ -3,8 +3,12 @@ function onPageload() {
   let exDatas = JSON.parse(localStorage.getItem("reviews"));
   if (exDatas != null) {
     reviewData = exDatas;
+    renderDatas();
   }
-  renderDatas();
+  else if(exDatas == null){
+    localStorage.setItem("reviews",JSON.stringify([]));
+    renderDatas();
+  }
 }
 function updateDatas(reviewSource) {
   reviewData.push(reviewSource);
@@ -12,20 +16,10 @@ function updateDatas(reviewSource) {
   localStorage.setItem("reviews", reviewDataInString);
 }
 let loggedInusers = JSON.parse(localStorage.getItem("loggedInusers"))[0];
-document.getElementById("userName").innerHTML = loggedInusers.username;
+document.getElementById("userName").innerHTML =`${loggedInusers.userName}`;
+console.log(loggedInusers.userName);
 let month = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
+  "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",
 ];
 let date = new Date().getDate();
 let mon = month[new Date().getMonth()];
@@ -34,65 +28,36 @@ document.getElementById("dateDiv").innerHTML = date + "-" + mon + "-" + year;
 function onSumbit(event) {
   event.preventDefault();
   let loggedInusers = JSON.parse(localStorage.getItem("loggedInusers"))[0];
-  console.log(loggedInusers.username);
-  let month = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-  let date = new Date().getDate();
-  let mon = month[new Date().getMonth()];
-  let year = new Date().getFullYear();
-  document.getElementById("dateDiv").innerHTML = date + "-" + mon + "-" + year;
 
   let inputData2 = document.getElementById("userInput").value;
   console.log(inputData2);
-  let exDatas = JSON.parse(localStorage.getItem("users"));
-  let match = false;
-  for (let i of exDatas) {
-    if (i.username == loggedInusers.username) {
-      match = true;
-      break;
-    }
-  }
-  if (match) {
+
     let exReviews = JSON.parse(localStorage.getItem("reviews"));
     let equal = false;
     for (let i of exReviews) {
-      if (i.userName == loggedInusers.username) {
+      if (i.userName == loggedInusers.userName) {
         equal = true;
         break;
       }
     }
     if (equal) {
       alert("Your review has been already submitted");
+      window.location.href = "./../index.html";
+
+      
     } else if (!equal) {
       let reviewSource = {
-        userName: loggedInusers.username,
-        userData: inputData2,
-        date: date + "-" + mon + "-" + year,
+        "userName": loggedInusers.userName,
+        "userData": inputData2,
+        "date": date + "-" + mon + "-" + year,
       };
       updateDatas(reviewSource);
-      renderDatas();
       alert("Your review has been submitted successfully");
+      window.location.href = "./../index.html";
     }
-  } else if (!match) {
-    alert("User does not exist please login");
-    window.location.href = "./../../pages/register.html";
-  }
   event.target.reset();
 }
 function renderDatas() {
-  console.log(loggedInusers.username);
   let answer = "";
   for (let i of reviewData) {
     let review = i.userData;
