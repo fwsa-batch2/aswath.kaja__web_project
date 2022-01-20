@@ -8,20 +8,11 @@ body {
 
 }
 
-.login {
-  margin-left: 50%;
-}
-
-#one {
-  margin-left: 450px;
-}
-
 .top_nav_bar {
   width: 100%;
   padding: 10px 0 10px 0;
   background-color: #333;
   position: relative;
-
 }
 .logo_div {
   color: #fff;
@@ -145,7 +136,7 @@ input[type="search"] {
 .brand_items img{
 height: 100%;
 }
-/*  */
+/* featured products */
 .small-container{
   max-width: 1080px;
   margin: auto;
@@ -218,7 +209,7 @@ h4{
   border: none;
   font-weight: bolder;
 }
-/*  */
+/*  reviews */
 .reviews{
   padding-top: 10px;
 }

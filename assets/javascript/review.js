@@ -27,8 +27,6 @@ let year = new Date().getFullYear();
 document.getElementById("dateDiv").innerHTML = date + "-" + mon + "-" + year;
 function onSumbit(event) {
   event.preventDefault();
-  let loggedInusers = JSON.parse(localStorage.getItem("loggedInusers"))[0];
-
   let inputData2 = document.getElementById("userInput").value;
   console.log(inputData2);
 
