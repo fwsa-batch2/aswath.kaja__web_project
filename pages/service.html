@@ -19,7 +19,7 @@
             <h2>Customer Service</h2>
             <div id="name"></div>
             <div  id="email"></div>
-            <input type="tel" id="phone" placeholder="Phone no" required >
+            <input type="tel" id="phone" placeholder="Phone no" pattern="[0-9]{10}" title="Must contain 10 numbers only" required >
             <input type="text" id="address" placeholder="Address" required>
             <textarea id="message" rows="4" placeholder="How can we help you?" required></textarea>
             <button type="submit" class="button">
