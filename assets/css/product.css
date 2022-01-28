@@ -5,6 +5,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
+    background: #fff;
 }
 .top_nav_bar {
   width: 100%;
@@ -129,11 +130,127 @@ input[type="search"] {
   transform: scale(1.04);
   transition: 0.5s;
 }
-
+.nav_items  a:hover:not(.active) {
+  padding: 6px 10px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 84%;
+}
+/* 
 table {
   width: 70%;
   margin-left: 15%;
 }
 hr {
   width: 70%;
+} */
+/* products nav */
+/* */
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+
 }
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col{
+  display: block;
+  flex-basis: 20%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 20px;
+  transition: transform 0.5s;
+  box-shadow: 0 0 100 1px #ccc;
+
+}
+.col img{
+  width: 100%;
+}
+
+.title{
+  text-align: center;
+  margin: 0 10% 80px;
+  position: relative;
+  line-height: 60px;
+
+}
+.title::after{
+  content: '';
+  background-color: #ff523b;
+  width: 150px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+h4{
+  color: #555;
+  font-weight: bolder;
+}
+.col p{
+  font-size: 14px;
+  color: green;
+  font-weight: bolder;
+}
+.mrp{
+  color: #000;
+}
+.rating .fa {
+  color:   rgb(248, 191, 3);
+}
+.rating .fas {
+  color:   rgb(248, 191, 3);
+}
+.col:hover{
+ transform: translateY(-5px);
+}
+.btn{
+  display: inline-block;
+  background-color: #ff523b;
+  color: #fff;
+  padding: 8px 50px;
+  border-radius: 15px;
+  margin-top: 2%;
+  border: none;
+  font-weight: bolder;
+}
+/* all products */
+.row{
+  justify-content: space-between;
+  margin: 80px auto 10px;
+}
+select{
+  border: 2px solid #000;
+  padding: 5px;
+  font-weight: 500;
+}
+select:focus{
+  outline: none;
+}
+.page-btn{
+  margin: 20px auto 80px;
+
+}
+
+.page-btn span{
+  display: inline-block;
+  border: 2px solid #000;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn span:hover{
+   background-color: black;
+   color: #fff;
+}
+

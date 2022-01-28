@@ -15,15 +15,16 @@ function updateDatas(reviewSource) {
   let reviewDataInString = JSON.stringify(reviewData);
   localStorage.setItem("reviews", reviewDataInString);
 }
-let loggedInusers = JSON.parse(localStorage.getItem("loggedInusers"))[0];
+
+const loggedInusers = JSON.parse(localStorage.getItem("loggedInusers"))[0];
 document.getElementById("userName").innerHTML =`${loggedInusers.userName}`;
 console.log(loggedInusers.userName);
-let month = [
+const month = [
   "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",
 ];
-let date = new Date().getDate();
-let mon = month[new Date().getMonth()];
-let year = new Date().getFullYear();
+const date = new Date().getDate();
+const mon = month[new Date().getMonth()];
+const year = new Date().getFullYear();
 document.getElementById("dateDiv").innerHTML = date + "-" + mon + "-" + year;
 function onSumbit(event) {
   event.preventDefault();

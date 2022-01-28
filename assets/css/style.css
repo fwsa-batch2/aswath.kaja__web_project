@@ -73,6 +73,7 @@ input[type="search"] {
   top: 30%;
   left: 88%;
   display: inline-flex;
+  background-color: #333;
 }
 .search_icon {
   position: absolute;

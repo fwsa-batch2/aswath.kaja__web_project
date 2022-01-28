@@ -7,6 +7,8 @@
     <title>Products</title>
     <link rel="stylesheet" href="../assets/css/cart.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="top_nav_bar">
@@ -38,7 +40,7 @@
     
       </div>
 
-    <div>
+    <!-- <div>
         <table>
             <caption></caption>
             <tr>
@@ -91,7 +93,104 @@
                 </td>
             </tr>
         </table>
-    </div>
+    </div> -->
+            <!--  cart items -->
+          <div class="container">
+            <div class="small-container">
+                <table>
+                    <tr>
+                        <th>  Products  </th>
+                        <th>  Quantity   </th>
+                        <th>  Subtotal   </th>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="../assets/images/len.png" alt="img">
+                                <div>
+                                    <p>
+                                        Dell vestro 
+                                    </p>
+                                    <small>Price $50 .00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+    
+                                </div>
+                            </div>
+                        </td>
+                        <td><div class="quantity">
+                            <button onclick="subtract()">-</button>
+                              <label >1</label>
+                            <button onclick="addition()">+</button>
+                        </div></td>
+    
+                        <td>50 </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="../assets/images/maclap.webp" alt="img">
+                                <div class="content">
+                                    <p>
+                                        Dell vestro 
+                                    </p>
+                                    <small>Price $50 .00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+    
+                                </div>
+                            </div>
+                        </td>
+                        <td><div class="quantity">
+                            <button>-</button>
+                              1
+                            <button>+</button>
+                        </div></td>
+    
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="../assets/images/hp.png" alt="img">
+                                <div class="content">
+                                    <p>Dell vestro</p>
+                                    <small>Price $50 .00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+    
+                                </div>
+                            </div>
+                        </td>
+                        <td><div class="quantity">
+                            <button>-</button>
+                              <label>1</label>
+                            <button>+</button>
+                        </div></td>
+    
+                        <td>50</td>
+                    </tr>
+                </table>
+                <div class="total-price">
+                   <table>
+                       <tr>
+                           <td>Subtotal</td>
+                           <td>200.00</td>
+                       </tr>
+                       <tr>
+                        <td>Tax</td>
+                        <td>30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>230.00</td>
+                    </tr>
+                    
+                   </table>
+                </div>
+            </div>
+            </div>
     <script src="../assets/javascript/cart.js"></script>
 </body>
 
