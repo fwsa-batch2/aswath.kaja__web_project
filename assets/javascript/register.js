@@ -41,7 +41,7 @@ function register(event){
             userList.push(customerdetails);
             let userArray = JSON.stringify(userList)
             localStorage.setItem("users", userArray);
-            window.location.href = "./../../pages/login.html";
+            window.location.href = "./login.html";
         }
     }
     function userNamevalid(currentname) {

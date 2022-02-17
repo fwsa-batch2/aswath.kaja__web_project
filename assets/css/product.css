@@ -253,4 +253,11 @@ select:focus{
    background-color: black;
    color: #fff;
 }
-
+.cart-btn{
+  width: 10%;
+  padding: 8px;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #333;
+}
