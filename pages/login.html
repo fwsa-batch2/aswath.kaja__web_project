@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+  <link rel="icon" href="../assets/images/rcompLogo.png">
 <link rel="stylesheet" href="../assets/css/login.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
         <div class="container">
+            <div class="container_item1">
             <div class="form">
                 <div class="form_login">
                    <div class="formhead">
@@ -24,8 +26,10 @@
                             <div class="input_feild">
                                 <input type="password" id="password" placeholder="password" pattern="[0-9 A-Z a-z]{8,15}" title="Password requires minimum 8 characters" required>
                                 <em class="fas fa-solid fa-lock icon"></em> 
-                                <em class="fas fa-solid fa-eye-slash showHidePw"></em>
-            
+                                <span class="password-btn" onclick="showPassword()"> 
+                                    <em  id="hidePassword" class="fas fa-solid fa-eye-slash showHidePw"></em>
+                                    <em  id="showPassword" class="fas fa-solid fa-eye showHidePw"></em>  
+                                   </span>            
                             </div>
                           <a class=forgot>Forget password?</a>
                           <button> Submit</button>
@@ -34,7 +38,28 @@
                 </div>
             </div>
         </div>
+       </div> 
         <script src="./../assets/javascript/login.js"></script>
+        <script>
+             function showPassword(){
+              let pass = document.getElementById("password");
+              let pass2 = document.getElementById("password2");
+              let showPass = document.getElementById("showPassword");
+              let hidePass = document.getElementById("hidePassword");
+            if(pass.type === "password"){
+              pass.type = "text";
+              showPass.style.display = "block";
+              showPass.style.color="#129eff"
+              hidePass.style.display = "none";
+            }
+            else{
+              pass.type = "password";
+              showPass.style.display = "none";
+              hidePass.style.display = "block";
+            }
+
+             }
+        </script>
     
     
 </body>

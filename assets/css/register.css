@@ -10,16 +10,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
+}
 .container_item1 {
     position: relative;
     max-width: 430px;
     width: 100%;
     background-color: white;
-    border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0,0.1);
-
+    border-radius: 10px;
 }
 .container .form{
     padding: 30px;
@@ -70,18 +69,6 @@
     color: #129eff;
 }
 
-/* input[type=text],
-[type=password],
-[type=email],
-select {
-    width: 100%;
-    padding: 10px 10px;
-    margin: 8px 0px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-
-} */
 
 label {
     font-size: 20px;
